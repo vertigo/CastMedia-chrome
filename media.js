@@ -242,7 +242,7 @@ function loadMedia(currentMediaIndex) {
       mediaInfo.metadata = new chrome.cast.media.TvShowMediaMetadata();
       mediaInfo.metadata.metadataType = chrome.cast.media.MetadataType.TV_SHOW;
       mediaInfo.metadata.seriesTitle = 'seriesTitle';
-      mediaInfo.metadata.subtitle = 'Steel steel steel';
+      mediaInfo.metadata.subtitle = 'Elephant Dream';
       mediaInfo.metadata.season = 5;
       mediaInfo.metadata.episode = 23;
       mediaInfo.metadata.originalAirDate = '2011';
@@ -252,7 +252,7 @@ function loadMedia(currentMediaIndex) {
     case chrome.cast.media.MetadataType.MOVIE:
       mediaInfo.metadata = new chrome.cast.media.MovieMediaMetadata();
       mediaInfo.metadata.metadataType = chrome.cast.media.MetadataType.MOVIE;
-      mediaInfo.metadata.subtitle = 'subtitle';
+      mediaInfo.metadata.subtitle = 'steel steel steel';
       mediaInfo.metadata.studio = 'By Blender Foundation';
       mediaInfo.metadata.releaseDate = '2006';
       mediaInfo.contentType = 'video/mp4';
