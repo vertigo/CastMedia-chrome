@@ -23,7 +23,13 @@ var progressFlag = 1;
 var mediaCurrentTime = 0;
 var session = null;
 var autoJoinPolicy = 'tab_and_origin_scoped';
-var media = [
+var media = null;
+
+/**
+ * Init media variable
+ */
+function initMedia() {
+  media = [
     {'url':'http://commondatastorage.googleapis.com/gtv-videos-bucket/big_buck_bunny_1080p.mp4',
      'title':'Big Buck Bunny',
      'thumb':'images/bunny.jpg',
@@ -49,8 +55,8 @@ var media = [
      'thumb':'images/San_Francisco_Fog.jpg',
      'metadataType':chrome.cast.media.MetadataType.PHOTO,
     },
-];
-
+  ];
+}
 
 /**
  * Call initialization
@@ -101,6 +107,8 @@ function initializeCastApi() {
     autoJoinPolicy);
 
   chrome.cast.initialize(apiConfig, onInitSuccess, onError);
+  
+  initMedia();
 };
 
 /**
