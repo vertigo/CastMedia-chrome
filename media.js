@@ -225,7 +225,6 @@ function loadMedia(currentMediaIndex) {
 
   console.log("loading..." + media[currentMediaIndex]['url']);
   appendMessage("loading..." + media[currentMediaIndex]['url']);
-  var mediaInfo = new chrome.cast.media.MediaInfo(media[currentMediaIndex]['url']);
   
   var mediaInfo = new chrome.cast.media.MediaInfo(media[currentMediaIndex]['url'], 'video/mp4');
 
