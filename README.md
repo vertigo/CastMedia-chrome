@@ -1,4 +1,4 @@
-# CastVideos-chrome
+# CastMedia-chrome
 ===============================
 
 This Google Cast demo app shows how to cast various media e.g. video, movies, TV show, music and photo from a Chrome browser using Cast Chrome Sender SDK. It highlights metadata types listed here: https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MetadataType and how metadata get sent to and handled by the Cast default receiver app.
