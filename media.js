@@ -100,7 +100,8 @@ function initializeCastApi() {
     autoJoinPolicy = chrome.cast.AutoJoinPolicy.TAB_AND_ORIGIN_SCOPED;
   }
 
-  var sessionRequest = new chrome.cast.SessionRequest(chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID);
+  // var sessionRequest = new chrome.cast.SessionRequest(chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID);
+  var sessionRequest = new chrome.cast.SessionRequest('6CC33488');
   var apiConfig = new chrome.cast.ApiConfig(sessionRequest,
     sessionListener,
     receiverListener,
